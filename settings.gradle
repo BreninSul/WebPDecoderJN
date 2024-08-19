@@ -9,4 +9,3 @@
 
 rootProject.name = 'WebPDecoderJN'
 include('lib')
-include('test-app')

@@ -1,12 +1,13 @@
 # WebPDecoderJN
+Fork of https://github.com/tduva/WebPDecoderJN/
 
 Decode static or animated WebP images into individual frames (and metadata),
 using JNA and native libraries based on the libwebp library.
 
 Includes native libraries for (must fit the JRE it is run with):
 
-* Windows x86, x86-64
-* Linux x86-64
+* Windows x86, x86-64 (1.3.2)
+* Linux x86-64, arm64
 * Mac x86-64, arm64
 
 ## Requirements
@@ -80,6 +81,9 @@ to build for a new platform, you may need to adjust the instructions to fit your
 needs.
 
 WebP library project license: [BSD 3-Clause](https://github.com/webmproject/libwebp/blob/main/COPYING)
+WebPDecoderJN library project license: [BSD 3-Clause](https://github.com/tduva/WebPDecoderJN/blob/main/COPYING)
+
 
 The native library can then be put in `lib/src/main/resources/` in a subfolder
 so that JNA can find it in the JAR (refer to JNA for the folder names).
+

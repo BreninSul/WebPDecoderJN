@@ -101,6 +101,12 @@ public class WebPDecoder {
             if (libPath == null) {
                 libPath = extractLib(LIB_NAME);
             }
+            if (libPath!=null) {
+                String arch=System.getProperty("os.arch");
+                LOGGER.info("WebP decoder loaded for "+arch+" from " + libPath.toString()+". Standard lib dir "+Platform.RESOURCE_PREFIX);
+            } else {
+                throw new IllegalStateException("Lib is not loaded");
+            }
             initialized = true;
         }
     }
